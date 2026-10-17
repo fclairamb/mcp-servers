@@ -1,10 +1,10 @@
 {
   "$schema": "../schemas/server-definition.schema.json",
-  "id": "io.solidping-mcp",
+  "id": "io.solidping-mcp-http",
   "name": "SolidPing",
   "alias": "solidping",
-  "description": "Create, run and diagnose uptime checks (40+ types), read results and incidents, and manage status pages and maintenance windows on SolidPing, an open-source uptime monitor.",
-  "logo": "https://avatars.githubusercontent.com/u/1743394?v=4",
+  "description": "Create, run and diagnose uptime checks, read results and incidents, and manage status pages on SolidPing, an open-source uptime monitor.",
+  "logo": "https://www.solidping.io/img/logo.png",
   "schema_version": "2.1",
   "categories": [
     "monitoring"
@@ -20,7 +20,7 @@
   ],
   "transport": {
     "type": "http",
-    "url": "https://solidping.io/api/v1/mcp",
+    "url": "https://solidping.io/api/v1/mcp?auth=required",
     "metadata": {
       "inputs": []
     }
@@ -37,7 +37,7 @@
   "links": {
     "repository": "https://github.com/fclairamb/solidping",
     "homepage": "https://www.solidping.io",
-    "documentation": "https://docs.solidping.io"
+    "documentation": "https://docs.solidping.io/docs/features/mcp"
   },
   "platforms": [
     "all"
